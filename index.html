@@ -1,0 +1,208 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>mist - home</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <meta name="theme-color" content="#1e1f22">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://mist.bar">
+  <meta property="og:title" content="mist">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <meta property="og:description"
+    content="a multipurpose discord bot focused on delivering a premium experience for server owners with its easy-to-use interface, and a host of powerful features.">
+  <meta property="og:image" content="https://cdn3.kars.bio/assets/external/mist.webp">
+
+</head>
+
+<body>
+  <div class="bg-[#1C1C1C] flex-col flex justify-center items-center">
+    <div id="navbar" class="z-10 max-sm:w-8/12 navbar w-[600px] top-0 fixed m-4 h-14 justify-center items-center flex rounded-2xl bg-neutral-800">
+      <a href="./"><div class="text-2xl absolute left-0 ml-6 text-white font-medium" style="top: 12px">mist</div></a>
+      <div id="nav-links" class="max-sm:hidden max-sm:ml-6 max-sm:text-white max-sm:font-light max-sm:text-xl max-sm:bottom-4 max-sm:hidden max-sm:block max-sm:absolute left-0 text-neutral-500 justify-center items-center flex">
+        <a href="https://status.mist.bar"><p class="hover:text-white cursor-pointer text-left sm:mx-4">status</p></a>
+        <a href="https://ko-fi.com/arex420/tiers"><p class="hover:text-white cursor-pointer text-left sm:mx-4">premium</p></a>
+        <a href="https://docs.mist.bar"><p class="hover:text-white cursor-pointer text-left sm:mx-4">commands</p></a>
+      </div>
+      <div id="button" onclick="window.open(`https://discord.com/api/oauth2/authorize?client_id=853971499622858752&permissions=8&scope=bot`)" class="cursor-pointer text-sm w-20 flex justify-center items-center hover:bg-black hover:text-white text-black h-8 rounded-2xl bg-[#d9d9d9] absolute right-0 max-sm:hidden m-5 max-sm:bottom-1">
+        Invite
+      </div>
+      <div onclick="togglenav()" class="sm:hidden flex flex-col space-y-1.5 absolute right-0 m-5 top-0">
+        <div id="ham-1" class="w-7 h-0.5 bg-white"></div>
+        <div id="ham-2" class="w-7 h-0.5 bg-white"></div>
+        <div id="ham-3" class="w-7 h-0.5 bg-white"></div>
+      </div>
+    </div>
+    <div id="header justify-center">
+      <div class="min-h-screen flex items-center justify-center py-12">
+        <div class="max-w-md sm:max-w-lg md:sm:max-w-3xl lg:sm:max-w-3xl w-full space-y-8 text-center">
+          <h1 class="text-5xl sm:text-xl font-['Satoshi Variable'] md:text-6xl lg:text-8xl tracking-tight font-semibold bg-clip-text text-white" style="
+                    font-size: 75px;
+                    background-clip: text;
+                    padding: 10px; 
+
+                    " data-aos="fade-up">
+            <b>A better way to manage your server.</b>
+          </h1>
+
+          <p data-aos="fade-up" class="text-white max-w-xs mt-4 md:mt-8 mx-auto font-thin text-base sm:text-lg md:text-xl md:max-w-3xl ">
+            mist is a discord bot  designed to bring simplicity and veratility to server owners
+          </p>
+          <div data-aos="fade-up" class="flex justify-center w-full items-center flex-wrap">
+            <button class="font-thin rounded-xl cursor-pointer m-4 text-lg w-36 flex justify-center items-center hover:bg-neutral-600 hover:text-white text-black h-12 rounded-2xl bg-neutral-200" onclick="window.open('https://discord.com/api/oauth2/authorize?client_id=853971499622858752&permissions=8&scope=bot')">Invite</button>
+            <button style="border: 1px #9f9f9f solid;" class="font-thin rounded-xl cursor-pointer text-lg w-36 flex border-[#9f9f9f] bg-[#2e2e2e] justify-center items-center hover:bg-neutral-200 hover:text-black text-white h-12 rounded-2xl" onclick="window.open('https://docs.mist.bar')">Docs</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="flex justify-center items-center flex-col mb-20">
+      <div data-aos="zoom-in" class="text-6xl text-white font-bold text-center">
+        <span class="underline-offset-4 text-[#a7a7a7] underline" style="--tw-gradient-stops: #d9d9d9, #d9d9d9, #d9d9d9; --tw-gradient-from: #d9d9d9; --tw-gradient-to: #d9d9d9;">Effort-less</span> setups.
+    </div>      <div class="w-full flex-col flex items-center justify-center mt-20 timeline relative">
+        <div data-aos="fade-right" class="m-6 bg-[#303030] border-[#8e8e8e] border-2 text-white rounded-2xl max-sm:w-9/12 max-sm:h-auto w-[400px] h-[280px] left ">
+          <div class="m-10 w-10/12 ">
+            <div class="font-bold text-4xl">Vanity Roles</div>
+            <p class="mt-4 text-xl font-thin">mist boasts a <span class="font-bold">highly complex</span> vanity roles system, with custom messages, support for multiple role rewards, and webhook notifications.</p>
+          </div>
+        </div>
+        <div data-aos="fade-left" class="m-6 bg-[#303030] border-[#8e8e8e] border-2 text-white rounded-2xl max-sm:w-9/12 max-sm:h-auto w-[400px] h-[280px] right relative">
+          <div class="m-10 w-10/12">
+            <div class="font-bold text-4xl">Security</div>
+            <p class="mt-4 text-xl font-thin">mist has a <span class="font-bold">huge</span> variety of features, such as auto-moderation and anti-nuke to <span class="font-bold">guard</span> your server against nukes and raids.</p>
+          </div>
+        </div>
+        <div data-aos="fade-right" class="m-6 bg-[#303030] border-[#8e8e8e] border-2 text-white rounded-2xl max-sm:w-9/12 max-sm:h-auto w-[400px] h-[280px] left relative">
+          <div class="m-10 w-10/12">
+            <div class="font-bold text-4xl">Embeds</div>
+            <p class="mt-4 text-xl font-thin">mist has a <span class="font-bold">complex</span> but simple in-built embed builder, allowing you to design a <span class="font-bold">limitless</span> amount of highly attractive embeds.</p>
+          </div>
+        </div>
+        <div data-aos="fade-left" class="m-6 bg-[#303030] border-[#8e8e8e] border-2 text-white rounded-2xl max-sm:w-9/12 max-sm:h-auto w-[400px] h-[280px] right relative">
+          <div class="m-10 w-10/12">
+            <div class="font-bold text-4xl">Integration</div>
+            <p class="mt-4 text-xl font-thin">mist has <span class="font-bold">multiple</span> modules utilizing Instagram, TikTok, Reddit, and more, allowing you to <span class="font-bold">seamlessly</span> interact with multiple social media platforms directly within the bot.</p>
+          </div>
+        </div>
+        <div data-aos="fade-right" class="m-6 bg-[#303030] border-[#8e8e8e] border-2 text-white rounded-2xl max-sm:w-9/12 max-sm:h-auto w-[400px] h-[280px] left relative">
+          <div class="m-10 w-10/12">
+            <div class="font-bold text-4xl">Automation</div>
+            <p class="mt-4 text-xl font-thin">mist’s <span class="font-bold">powerful</span> auto-posting module allows you to choose a variety of categories of images to post, ensuring you will always find the images you are looking for.</p>
+          </div>
+        </div>
+        <div class="rond1">
+          <div class="rond"></div>
+        <div class="rond"></div>
+        <div class="rond"></div>
+        <div class="rond"></div>
+        <div class="rond"></div>
+        </div>
+        
+      </div>
+    </div>
+    <div class="flex justify-center items-center flex-col mt-12">
+        <h5 class="text-white text-xl font-light">mist has much more to offer</h5>
+        <div class="flex justify-center items-center flex-wrap my-16 md:w-[800px]">
+          <div data-aos="fade-up" class="bg-[#3c3c3c] border-[#505050] border-2 flex justify-center items-center flex-col h-32 w-32 mx-6 my-12 rounded-2xl">
+            <i class="bx bx-party text-white text-5xl"></i>
+            <p class="text-white font-light text-xl mt-4">Giveaways</p>
+          </div>
+          <div data-aos="fade-up" class="bg-[#3c3c3c] border-[#505050] border-2 flex justify-center items-center flex-col h-32 w-32 mx-6 my-12 rounded-2xl">
+            <i class="bx bx-shield text-white text-5xl"></i>
+            <p class="text-white font-light text-xl mt-4">Moderation</p>
+          </div>
+          <div data-aos="fade-up" class="bg-[#3c3c3c] border-[#505050] border-2 flex justify-center items-center flex-col h-32 w-32 mx-6 my-12 rounded-2xl">
+            <i class="bx bx-dollar-circle text-white text-5xl"></i>
+            <p class="text-white font-light text-xl mt-4">Economy</p>
+          </div>
+          <div data-aos="fade-up" class="bg-[#3c3c3c] border-[#505050] border-2 flex justify-center items-center flex-col h-32 w-32 mx-6 my-12 rounded-2xl">
+            <i class="bx bx-exit text-white text-5xl"></i>
+            <p class="text-white font-light text-xl mt-4">Welcomer</p>
+          </div>
+          <div data-aos="fade-up" class="bg-[#3c3c3c] border-[#505050] border-2 flex justify-center items-center flex-col h-32 w-32 mx-6 my-12 rounded-2xl">
+            <i class="bx bx-envelope text-white text-5xl"></i>
+            <p class="text-white font-light text-xl mt-4">Tickets</p>
+          </div>
+          <div data-aos="fade-up" class="bg-[#3c3c3c] border-[#505050] border-2 flex justify-center items-center flex-col h-32 w-32 mx-6 my-12 rounded-2xl">
+            <i class="bx bx-music text-white text-5xl"></i>
+            <p class="text-white font-light text-xl mt-4">Music</p>
+          </div>
+          <div data-aos="fade-up" class="bg-[#3c3c3c] border-[#505050] border-2 flex justify-center items-center flex-col h-32 w-32 mx-6 my-12 rounded-2xl">
+            <i class="bx bx-user-voice text-white text-5xl"></i>
+            <p class="text-white font-light text-xl mt-4">Voicemaster</p>
+          </div>
+          <div data-aos="fade-up" class="bg-[#3c3c3c] border-[#505050] items-center text-center border-2 flex justify-center items-center flex-col h-32 w-32 mx-6 my-12 rounded-2xl">
+            <i class="bx bx-at text-white text-5xl"></i>
+            <p class="text-white font-light text-xl mt-4" >Ping on join</p>
+          </div>
+        </div>
+        <h5 class="text-white text-lg font-light">and the list still goes on...</h5>
+    </div>
+    <footer class="mt-20 w-full bg-neutral-800">
+      <h2 id="footer" class="sr-only">mist</h2>
+      <div class="px-5 py-12 mx-auto max-w-7xl lg:py-16 md:px-12 lg:px-20">
+        <div class="xl:grid xl:grid-cols-3 xl:gap-8">
+          <div class="xl:col-span-1">
+            <a href="/"
+              class="text-lg font-bold tracking-tighter transition duration-500 ease-in-out transform text-black tracking-relaxed lg:pr-8">
+              <img src="https://cdn3.kars.bio/assets/external/mist.webp" alt="Logo" className="w-8 h-8"
+                style="width: 64; height: 64;" />
+            </a>
+            <p class="w-1/2 mt-2 text-sm text-gray-500">Copyright © mist 2024</p>
+            <p class="w-1/2 mt-2 text-sm text-transparent"> Made by Kars ツ</p>
+          </div>
+          <div class="grid grid-cols-2 gap-8 mt-12 xl:mt-0 xl:col-span-2">
+            <div class="md:grid md:grid-cols-2 md:gap-16">
+              <div>
+                <h3 class="font-semibold leading-6 text-white">
+                  mist
+                </h3>
+                <ul role="list" class="mt-4 space-y-3">
+                  <li>
+                    <a href="#_" class="text-sm text-gray-500 hover:text-white">
+                      invite
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#_" class="text-sm text-gray-500 hover:text-white">
+                      docs
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#_" class="text-sm text-gray-500 hover:text-white">
+                      commands
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="mt-12 md:mt-0">
+                <h3 class="font-semibold leading-6 text-white">
+                  policy
+                </h3>
+                <ul role="list" class="mt-4 space-y-4">
+                  <li>
+                    <a href="#_" class="text-sm text-gray-500 hover:text-white">
+                      privacy policy
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#_" class="text-sm text-gray-500 hover:text-white">
+                      terms of service
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="main.js"></script>
+</body>
+
+</html>

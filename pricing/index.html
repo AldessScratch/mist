@@ -1,0 +1,184 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>mist - home</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="../style.css">
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <meta name="theme-color" content="#1e1f22">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://mist.bar">
+  <meta property="og:title" content="mist">
+  <meta property="og:description"
+    content="a multipurpose discord bot focused on delivering a premium experience for server owners with its easy-to-use interface, and a host of powerful features.">
+  <meta property="og:image" content="https://cdn3.kars.bio/assets/external/mist.webp">
+
+</head>
+
+<body>
+  <div class="bg-[#2d2d2d] flex-col flex justify-center items-center">
+    <div id="navbar" class="z-10 max-sm:w-8/12 navbar w-[600px] top-0 fixed m-4 h-14 justify-center items-center flex rounded-2xl bg-neutral-800">
+      <a href="../"><div class="text-2xl absolute left-0 ml-6 top-2 text-white font-medium">mist</div></a>
+      <div id="nav-links" class="max-sm:hidden max-sm:ml-6 max-sm:text-white max-sm:font-light max-sm:text-xl max-sm:bottom-4 max-sm:hidden max-sm:block max-sm:absolute left-0 text-neutral-500 justify-center items-center flex">
+        <a href="#"><p class="hover:text-white cursor-pointer text-left sm:mx-4">status</p></a>
+        <a href="index.html"><p class="hover:text-white cursor-pointer text-left sm:mx-4">pricing</p></a>
+        <a href="#"><p class="hover:text-white cursor-pointer text-left sm:mx-4">commands</p></a>
+      </div>
+      <div id="button" onclick="window.open(`https://discord.com/api/oauth2/authorize?client_id=853971499622858752&permissions=8&scope=bot`)" class="cursor-pointer text-sm w-20 flex justify-center items-center h-8 rounded-2xl bg-white absolute right-0 max-sm:hidden m-5 max-sm:bottom-1">
+        Invite
+      </div>
+      <div onclick="togglenav()" class="sm:hidden flex flex-col space-y-1.5 absolute right-0 m-5 top-0">
+        <div id="ham-1" class="w-7 h-0.5 bg-white"></div>
+        <div id="ham-2" class="w-7 h-0.5 bg-white"></div>
+        <div id="ham-3" class="w-7 h-0.5 bg-white"></div>
+      </div>
+    </div>
+    <div class="mt-36 flex justify-center flex-col items-center w-full">
+      <div class="text-5xl text-white font-bold">Pricing</div>
+      <div class="mt-12 flex flex-wrap justify-center items-center">
+        <div class="m-12 h-[380px] w-[330px] rounded bg-neutral-800">
+          <div class="flex justify-center flex-col items-center mt-12">
+            <div class="text-4xl text-white font-bold">Whitelist</div>
+          <div class="mt-4"><span class="text-2xl text-white">$9.99</span><span class="text-[10px] text-white ml-2">/ lifetime</span></div>
+          <button onclick="window.open('https://discord.gg/order')" class="mt-4 bg-neutral-600 flex justify-center items-center h-8 w-10/12 rounded cursor-pointer text-white text-[15px]">More Info</button>
+          <div class="mt-4 text-white text-1xl text-left">
+            <p class="flex items-center"><img class="h-4 mr-2" src="../tick.png"> full access to the bot for <span class="mx-1 font-bold">1</span> server</p>
+          </div>
+          </div>
+        </div>
+        <div class="m-12 h-[380px] w-[330px] rounded bg-neutral-800">
+          <div class="flex justify-center flex-col items-center mt-12">
+            <div class="text-4xl text-white font-bold">Whitelabel</div>
+          <div class="mt-4"><span class="text-2xl text-white">$14.99</span><span class="text-[10px] text-white ml-2">/ month</span></div>
+          <button onclick="window.open('https://discord.gg/order')" class="mt-4 bg-neutral-600 flex justify-center items-center h-8 w-10/12 rounded cursor-pointer text-white text-[15px]">More Info</button>
+          <div class="mt-4 text-white text-1xl text-left w-10/12 font-light">
+            <p class="flex items-center"><img class="h-4 mr-2" src="../tick.png"> full access to the bot for <span class="mx-1 font-bold">1</span> server</p>
+            <p class="mt-4 flex items-center"><img class="h-4 mr-2" src="../tick.png"> dedicated ressources</p>
+            <p class="mt-4 flex items-center"><img class="h-4 mr-2" src="../tick.png"> custom bot name, profile picture and status</p>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+   <div class="mt-12 flex justify-center flex-col items-center">
+    <div class="text-5xl text-white font-bold mb-16">FAQ</div>
+      <div class="accordion-container mt-8">
+        <div class="accordion-item">
+          <div style="background-color: #282828;" class="accordion-header">
+            Is mist free? <i class='bx bx-chevron-down icon'></i>
+          </div>
+          <div class="accordion-content">
+              <p class="text-white">No, mist is a <span class="font-bold">paid</span> bot. If you want to test the bot out before you buy it, you can head over to our <a class="text-[#5B5B5B]" href="https://discord.gg/order" target="_blank">discord server</a> to request a 1-day trial.</p>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-container mt-4">
+        <div class="accordion-item">
+          <div style="background-color: #282828;" class="accordion-header">
+            How can I pay for mist? <i class='bx bx-chevron-down icon'></i>
+          </div>
+          <div class="accordion-content">
+              <p class="text-white">We accept the following payment methods: PayPal, Cashapp, Crypto (Bitcoin, Litecoin and Ethereum), Venmo, Debit/Credit Cards (Stripe) and Apple Pay. To purchase the bot, head over to our <a class="text-[#5B5B5B]" href="https://discord.gg/order" target="_blank">discord server</a>.</p>
+          </div>
+        </div>
+     </div>
+     <div class="accordion-container mt-4">
+      <div class="accordion-item">
+        <div style="background-color: #282828;" class="accordion-header">
+          Can I get a refund if I don’t want to use mist anymore? <i class='bx bx-chevron-down icon'></i>
+        </div>
+        <div class="accordion-content">
+            <p class="text-white">You can check if you are eligible for a refund in our Discord server <a class="text-[#5B5B5B]" href="https://discord.gg/order" target="_blank">here</a>.</p>
+        </div>
+      </div>
+   </div>
+   <div class="accordion-container mt-4">
+    <div class="accordion-item">
+      <div style="background-color: #282828;" class="accordion-header">
+        Can I transfer one server whitelist to another? <i class='bx bx-chevron-down icon'></i>
+      </div>
+      <div class="accordion-content">
+          <p class="text-white">We offer <span class="font-bold">one</span> server transfer for every whitelist. To get a transfer, open a ticket in our <a class="text-[#5B5B5B]" href="https://discord.gg/order" target="_blank">Discord server</a> and provide a <span class="font-bold">valid proof of purchase</span>. Please note that we reserve the right to withhold any transfers if we deem necessary.</p>
+      </div>
+    </div>
+ </div>
+ <div class="accordion-container mt-4">
+  <div class="accordion-item">
+    <div style="background-color: #282828;" class="accordion-header">
+      My previous account got disabled, can I still use mist? <i class='bx bx-chevron-down icon'></i>
+    </div>
+    <div class="accordion-content">
+        <p class="text-white">Certainly, open a ticket in our <a class="text-[#5B5B5B]" href="https://discord.gg/order" target="_blank">Discord server</a> and provide a <span class="font-bold">valid proof of purchase</span>. Please note that we reserve the right to withhold any transfers if we deem necessary.</p>
+    </div>
+  </div>
+</div>
+
+  </div>
+  <footer class="mt-20 w-full bg-neutral-800">
+    <h2 id="footer" class="sr-only">mist</h2>
+    <div class="px-5 py-12 mx-auto max-w-7xl lg:py-16 md:px-12 lg:px-20">
+      <div class="xl:grid xl:grid-cols-3 xl:gap-8">
+        <div class="xl:col-span-1">
+          <a href="/"
+            class="text-lg font-bold tracking-tighter transition duration-500 ease-in-out transform text-black tracking-relaxed lg:pr-8">
+            <img src="https://cdn3.kars.bio/assets/external/mist.webp" alt="Logo" className="w-8 h-8"
+              style="width: 64; height: 64;" />
+          </a>
+          <p class="w-1/2 mt-2 text-sm text-gray-500">Copyright © mist 2024</p>
+          <p class="w-1/2 mt-2 text-sm text-transparent"> Made by Kars ツ</p>
+        </div>
+        <div class="grid grid-cols-2 gap-8 mt-12 xl:mt-0 xl:col-span-2">
+          <div class="md:grid md:grid-cols-2 md:gap-16">
+            <div>
+              <h3 class="font-semibold leading-6 text-white">
+                mist
+              </h3>
+              <ul role="list" class="mt-4 space-y-3">
+                <li>
+                  <a href="#_" class="text-sm text-gray-500 hover:text-white">
+                    invite
+                  </a>
+                </li>
+                <li>
+                  <a href="#_" class="text-sm text-gray-500 hover:text-white">
+                    docs
+                  </a>
+                </li>
+                <li>
+                  <a href="#_" class="text-sm text-gray-500 hover:text-white">
+                    commands
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="mt-12 md:mt-0">
+              <h3 class="font-semibold leading-6 text-white">
+                policy
+              </h3>
+              <ul role="list" class="mt-4 space-y-4">
+                <li>
+                  <a href="#_" class="text-sm text-gray-500 hover:text-white">
+                    privacy policy
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#_" class="text-sm text-gray-500 hover:text-white">
+                      terms of service
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  </div>
+  <script src="../main.js"></script>
+</body>
+
+</html>
